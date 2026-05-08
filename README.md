@@ -1,2 +1,2 @@
 # Writeups
-Writeups de CTF y Máquinas de Hacking Ético
+CTF y Máquinas de Hacking Ético
