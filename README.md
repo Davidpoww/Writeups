@@ -11,7 +11,7 @@ Este repositorio recoge mis writeups de CTFs y máquinas de hacking, documentand
 - 🐧 Entorno de trabajo: **Kali Linux**
 - 📡 Estudiando actualmente: **Cisco Networking (CCNA)**
 - 🎯 Próximos objetivos: eJPT → CompTIA Security+ → CEH
-- 🚩 Aprendizaje continuo a través de plataformas CTF
+- 🚩 Aprendizaje continuo a través de plataformas CTF y The Big School
 
 ---
 
