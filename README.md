@@ -1,4 +1,4 @@
-# 👋 Hey, soy Wopex (David)
+# 👋 Hey, soy Wøpx (David)
 
 Apasionado de la ciberseguridad con enfoque en **Blue Team y Defensa**.
 Este repositorio recoge mis writeups de CTFs y máquinas de hacking, documentando mi aprendizaje y evolución en el mundo de la seguridad informática.
