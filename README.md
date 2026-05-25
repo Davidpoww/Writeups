@@ -38,7 +38,8 @@ sudo arp-scan -I <interfaz> --localnet
 
 Una vez identificada la IP del objetivo, procedemos a la fase de enumeración.
 
-![ARP Scan](imgs/arp-scan.png)
+![ARP Scan](https://github.com/Davidpoww/Writeups/blob/main/TheHackersLabs/Microchoft/imgs/arp-scan.png)
+
 ---
 
 ## 2. Enumeración
@@ -56,10 +57,14 @@ de vulnerabilidades de Nmap:
 ```bash
 sudo nmap -p 445 --script=vuln <IP_OBJETIVO>
 ```
+![Labs](https://github.com/Davidpoww/Writeups/blob/main/TheHackersLabs/Microchoft/imgs/puertos-lab.png)
+
 
 **Resultado clave:** el servicio SMBv1 expuesto era vulnerable a **MS17-010 (EternalBlue)**
 — `CVE-2017-0143` — una vulnerabilidad crítica de ejecución remota de código que afecta
 a múltiples versiones de Windows.
+
+![Nmap](https://github.com/Davidpoww/Writeups/blob/main/TheHackersLabs/Microchoft/imgs/nmap-vuln.png)
 
 ---
 
@@ -106,6 +111,8 @@ run
 El exploit se ejecutó con éxito, obteniendo una sesión de **Meterpreter** con
 privilegios de administrador sobre el sistema objetivo.
 
+![Exploit](https://github.com/Davidpoww/Writeups/blob/main/TheHackersLabs/Microchoft/imgs/exploit.png)
+
 ---
 
 ## 4. Post-Explotación y Flags
@@ -117,6 +124,15 @@ hasta localizar los archivos de flags correspondientes al usuario y al administr
 |------------|--------|
 | 🏁 User    | ✅     |
 | 🏁 Admin   | ✅     |
+
+
+![Dir](https://github.com/Davidpoww/Writeups/blob/main/TheHackersLabs/Microchoft/imgs/dir-usr.png)
+---
+![Usr](https://github.com/Davidpoww/Writeups/blob/main/TheHackersLabs/Microchoft/imgs/usr_windows.png)
+---
+![Admin](https://github.com/Davidpoww/Writeups/blob/main/TheHackersLabs/Microchoft/imgs/flag_Admin.png)
+---
+![Lola](https://github.com/Davidpoww/Writeups/blob/main/TheHackersLabs/Microchoft/imgs/flag_User_Lola.png)
 
 ---
 
