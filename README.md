@@ -38,6 +38,7 @@ sudo arp-scan -I <interfaz> --localnet
 
 Una vez identificada la IP del objetivo, procedemos a la fase de enumeración.
 
+![ARP Scan](imgs/arp-scan.png)
 ---
 
 ## 2. Enumeración
