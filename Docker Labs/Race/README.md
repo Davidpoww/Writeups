@@ -46,7 +46,7 @@ Activamos **FoxyProxy** y configuramos **Burp Suite** añadiendo la IP de la ví
 
 ![Burp Suite scope](imgs/Pasted%20image%2020260730172526.png)
 
-Interceptamos la petición POST generada al hacer click en "ejecutar acción" y la enviamos al **Repeater**. Creamos un grupo de 50 peticiones y las enviamos en paralelo con `Ctrl+R`:
+Interceptamos la petición POST generada al hacer click en "ejecutar acción" y la enviamos al **Repeater**. Creamos un grupo de 15 peticiones y las enviamos en paralelo con `Ctrl+R`:
 
 ![Repeater grupo](imgs/Pasted%20image%2020260730174753.png)
 ![Envío paralelo](imgs/Pasted%20image%2020260730174848.png)
