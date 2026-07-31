@@ -1,11 +1,11 @@
 # Race — DockerLabs
 
-| Campo        | Detalle                                                              |
-|--------------|----------------------------------------------------------------------|
+| Campo        | Detalles                                                              |
+|--------------|-----------------------------------------------------------------------|
 | 🏷️ Plataforma | DockerLabs                                                           |
 | 💻 SO         | Linux                                                                |
 | 📊 Dificultad | Media                                                                |
-| 🔑 Técnicas   | Race Condition, Burp Suite, SSH, Privilege Escalation                |
+| 🔑 Técnicas   | Race Condition, Burp Suite, SSH, Escalada de Privilegio              |
 
 ---
 
