@@ -116,8 +116,9 @@ Entre los procesos detectamos un script ejecutándose en segundo plano:
 
 Explotamos la vulnerabilidad en dicho script siguiendo las instrucciones del `README.txt`, obteniendo acceso root y la flag final:
 
-![Root obtenido](imgs/Pasted%20image%2020260730182856.png)
-![Flag](imgs/Pasted%20image%2020260730182955.png)
+![Root obtenido](imgs/Pasted%20image%2020260730182955.png)
+![Flag](imgs/Pasted%20image%2020260730182856.png)
+
 
 ---
 
