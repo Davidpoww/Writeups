@@ -1,6 +1,6 @@
 # Race — DockerLabs
 
-| Campo        | Detalles                                                              |
+| Campo        |Detalles                                               |
 |--------------|-----------------------------------------------------------------------|
 | 🏷️ Plataforma | DockerLabs                                                           |
 | 💻 SO         | Linux                                                                |
