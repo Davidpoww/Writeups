@@ -14,8 +14,8 @@ Selecciona una plataforma para ver los writeups:
 - 🐳 [Docker Labs](./Docker%20Labs)  
   Retos y máquinas de Dockerlabs con enfoque en pentesting y explotación.
 
-- 🏴 [BunkerLabs](./Bunker%20Labs)	
-  Retos y máquinas de Dockerlabs con enfoque en pentesting y explotación.
+- 🏴 [BunkerLabs](./Bunker%20Labs)  
+  Laboratorios de BunkerLabs enfocados en vulnerabilidades web y explotación avanzada.
 
 ---
 
