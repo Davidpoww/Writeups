@@ -8,10 +8,10 @@ Repositorio personal de resolución de máquinas, laboratorios y retos de plataf
 
 Selecciona una plataforma para ver los writeups:
 
-- 🔐 [TheHackersLabs](./TheHackersLabs)  
+- 🔐 [The Hackers Labs](./The\Hackers\Labs)  
   Laboratorios y máquinas de TheHackersLabs con análisis paso a paso.
 
-- 🐳 [Dockerlabs](./Dockerlabs)  
+- 🐳 [Docker labs](./Docker\ labs)  
   Retos y máquinas de Dockerlabs con enfoque en pentesting y explotación.
 
 ---
