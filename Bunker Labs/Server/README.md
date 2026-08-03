@@ -113,7 +113,7 @@ dirb http://172.17.0.2:3000
 
 ![Dirb resultado](imgs/Pasted%20image%2020260804004110.png)
 
-Dirb descubre el directorio `/r/admin`. Lo combinamos con el bypass:
+Dirb descubre el directorio `/r`. Lo combinamos con el bypass y agregamos `/r/admin`:
 
 ```
 http://0:3000/r/admin
