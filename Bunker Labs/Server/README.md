@@ -27,7 +27,7 @@
 
 ---
 
-## 1. 🔍 Reconocimiento
+## 1. Reconocimiento
 
 Comenzamos con un escaneo completo de puertos:
 
