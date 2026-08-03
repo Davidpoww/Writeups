@@ -17,13 +17,13 @@
 
 ## Índice
 
-1. [🔍 Reconocimiento](#1-reconocimiento)
-2. [🌐 Análisis de la aplicación](#2-análisis-de-la-aplicación)
-3. [🗂️ Fuzzing — Descubrimiento de rutas](#3-fuzzing--descubrimiento-de-rutas)
-4. [💥 Explotación — Nivel 1](#4-explotación--nivel-1)
-5. [⚡ Explotación — Nivel 2 y Bypass de Blacklist](#5-explotación--nivel-2-y-bypass-de-blacklist)
-6. [🏁 Flag](#6-flag)
-7. [📌 Conclusiones](#7-conclusiones)
+1. [Reconocimiento](#1-reconocimiento)
+2. [Análisis de la aplicación](#2-análisis-de-la-aplicación)
+3. [Fuzzing — Descubrimiento de rutas](#3-fuzzing--descubrimiento-de-rutas)
+4. [Explotación — Nivel 1](#4-explotación--nivel-1)
+5. [Explotación — Nivel 2 y Bypass de Blacklist](#5-explotación--nivel-2-y-bypass-de-blacklist)
+6. [Flag](#6-flag)
+7. [Conclusiones](#7-conclusiones)
 
 ---
 
