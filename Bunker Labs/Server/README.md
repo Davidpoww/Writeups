@@ -39,7 +39,7 @@ sudo nmap -T5 -sS -sC -sV -vvvv -Pn -n 172.17.0.2
 
 ---
 
-## 2. 🌐 Análisis de la aplicación
+## 2. Análisis de la aplicación
 
 Accedemos al servicio web descubierto por Nmap. Regla de oro en pentesting web:
 
@@ -49,7 +49,7 @@ Accedemos al servicio web descubierto por Nmap. Regla de oro en pentesting web:
 
 ---
 
-## 3. 🗂️ Fuzzing — Descubrimiento de rutas
+## 3. Fuzzing — Descubrimiento de rutas
 
 Lanzamos **Gobuster** para descubrir directorios y ficheros ocultos:
 
@@ -71,7 +71,7 @@ Gobuster descubre rutas internas. Al intentar acceder desde el navegador, la apl
 
 ---
 
-## 4. 💥 Explotación — Nivel 1
+## 4. Explotación — Nivel 1
 
 Hacemos fuzzing específico sobre el directorio `/internal`:
 
@@ -95,7 +95,7 @@ http://localhost:3000/internal/admin
 
 ---
 
-## 5. ⚡ Explotación — Nivel 2 y Bypass de Blacklist
+## 5. Explotación — Nivel 2 y Bypass de Blacklist
 
 El nivel 2 presenta un sistema que mide el rendimiento de sitios web. Al intentar reutilizar `localhost`, el servidor lo bloquea — tiene una **blacklist** con términos como `localhost`, `127.0.0.1`, `0.0.0.0`, etc.
 
@@ -127,7 +127,7 @@ Lo introducimos en el verificador de la aplicación y conseguimos acceso al recu
 
 ---
 
-## 7. 📌 Conclusiones
+## 7. Conclusiones
 
 Esta máquina demuestra cómo el SSRF permite acceder a recursos internos de un servidor abusando de su capacidad para realizar peticiones HTTP. La blacklist es una medida insuficiente si no se validan correctamente todas las representaciones posibles de direcciones locales.
 
