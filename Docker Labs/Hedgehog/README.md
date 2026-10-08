@@ -77,10 +77,10 @@ ssh tails@172.17.0.2
 Una vez dentro, aplicamos la metodología estándar de reconocimiento post-explotación:
 
 ```bash
-whoami                          # Usuario actual
-cat /etc/passwd                 # Todos los usuarios del sistema
-cat /etc/passwd | grep "/bin/bash"  # Solo usuarios con shell activa
-sudo -l                         # Comandos que podemos ejecutar como otro usuario
+whoami                          	# Usuario actual
+cat /etc/passwd                 	# Todos los usuarios del sistema
+cat /etc/passwd | grep "/bin/bash"  	# Solo usuarios con shell activa
+sudo -l                         	# Comandos que podemos ejecutar como otro usuario
 ```
 
 ![Reconocimiento usuarios](imgs/Pasted%20image%2020261008104703.png)
