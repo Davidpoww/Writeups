@@ -111,15 +111,25 @@ sudo -u root /bin/bash
 
 ---
 
-## 5. Conclusiones
+## 5. Detección y mitigación 🔵
 
-Una máquina que ilustra perfectamente la escalada de privilegios en cadena mediante `sudo -l`. Un usuario mal configurado es suficiente para comprometer todo el sistema.
+### Evidencias que deja el ataque
+| Fase | Dónde queda registrado | Qué se ve |
+|---|---|---|
+| Fuerza bruta (Hydra) | `/var/log/auth.log` | Decenas de `Failed password for tails` desde la misma IP en segundos |
+| Acceso SSH | `/var/log/auth.log` | `Accepted password for tails` justo después de los fallos |
+| Pivote con sudo | `/var/log/auth.log` | `sudo: tails : USER=sonic ; COMMAND=/bin/bash` y luego `USER=root` |
 
-**Lecciones clave:**
-- 🔒 No exponer nombres de usuario en servicios web accesibles.
-- 🔒 Auditar los permisos `sudo` de cada usuario — aplicar el principio de mínimo privilegio.
-- 🔒 Un pivote de usuario a usuario puede ser tan peligroso como un acceso directo a root.
+### Cómo lo detectaría un SOC
+- **MITRE ATT&CK:** T1110.001 (fuerza bruta de contraseñas) y T1548.003 (abuso de sudo).
+- **Wazuh:** las reglas de sshd por defecto alertan de varios fallos de autenticación seguidos desde una misma IP.
+- **Señal crítica:** un login correcto *después* de una ráfaga de fallos = cuenta comprometida casi seguro.
+- `sudo` lanzando una shell (`/bin/bash`) como otro usuario es otro indicador de alta prioridad.
+
+### Mitigación
+- SSH solo con clave: `PasswordAuthentication no` en `/etc/ssh/sshd_config`.
+- `fail2ban` para bloquear IPs tras varios intentos fallidos.
+- En `sudoers`, permitir solo comandos concretos, nunca una shell completa.
+- No exponer nombres de usuario en la web.
 
 ---
-
-*Writeup realizado con fines educativos en un entorno controlado.* 🛡️
